@@ -65,7 +65,7 @@ nav li {
     color: rgb(64, 68, 71);
 }
 .titleout {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 2rem;
     font-weight: 400;
     color: rgb(64, 68, 71);
@@ -89,8 +89,9 @@ header p {
 */
 
 .parallax {
+    overflow-x: hidden;
     background-image: url(Images/background.jpg);
-    height: 100vh;
+    height: 100%;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -104,7 +105,8 @@ header p {
 }
 
 .parallax li {
-    margin: 8rem 0;
+    margin: 7.5rem;
+    text-align: center;
 
 }
 
@@ -233,6 +235,7 @@ header p {
         flex-direction: row;
         justify-content: space-between;
         text-align: left;
+		font-size: 8rem;
     }
     #contact .rotate {
         display: block;
@@ -278,11 +281,17 @@ header p {
     .projects {
         display: grid;
         height: 100vh;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+        grid-template-columns: repeat(3, 31.5%);
+        grid-gap: 50px;
+		margin-right: 3rem;
+		margin-left: 3rem;
     }
     .grid-item {
         margin-bottom: 0;
+    }
+
+    .parallax li {
+        text-align: right;
     }
 
 }
